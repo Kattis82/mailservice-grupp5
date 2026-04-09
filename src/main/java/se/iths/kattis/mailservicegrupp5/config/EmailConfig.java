@@ -6,7 +6,7 @@ import se.iths.kattis.mailservicegrupp5.messaging.EmailSender;
 import se.iths.kattis.mailservicegrupp5.service.EmailService;
 
 @Configuration
-public class EmailConfiguration {
+public class EmailConfig {
 
     // Skapa bean för EmailSender
     @Bean
