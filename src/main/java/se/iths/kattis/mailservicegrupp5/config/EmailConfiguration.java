@@ -6,16 +6,15 @@ import se.iths.kattis.mailservicegrupp5.messaging.EmailSender;
 import se.iths.kattis.mailservicegrupp5.service.EmailService;
 
 @Configuration
-public class EmailConfig {
+public class EmailConfiguration {
 
-
-    // skapa bean för EmailSender
+    // Skapa bean för EmailSender
     @Bean
     public EmailSender emailSender() {
-        return new EmailSender();
+        return new EmailSender(); // använder default-konstruktorn
     }
 
-    // skapa bean för EmailService, injicerar EmailSender
+    // Skapa bean för EmailService och injicera EmailSender
     @Bean
     public EmailService emailService(EmailSender emailSender) {
         return new EmailService(emailSender);
