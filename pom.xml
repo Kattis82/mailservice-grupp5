@@ -10,7 +10,7 @@
     </parent>
     <groupId>se.iths.kattis</groupId>
     <artifactId>mailservice-grupp5</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <name>mailservice-grupp5</name>
     <description>mailservice-grupp5</description>
     <url/>
